@@ -4,13 +4,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <layouts/cuddlykeyboards/ferris.dtsi>
-
-// Assigning suitable kscan and matrix transforms
-&cuddlykeyboards_ferris_layout {
-    transform = <&default_transform>;
-    kscan = <&kscan0>;
-};
 
 // Home row mods macro
 //#define HRML(k1,k2,k3,k4) &kp k1  &kp k2  &kp k3  &kp k4
@@ -218,57 +211,6 @@
         };
 		extra4 {
             status = "reserved";
-        };
-    };
-/ {
-    default: default {
-        compatible = "zmk,physical-layout";
-        display-name = "Sweep_Layout";
-
-        keys  //                     w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100    0   95       0     0     0>
-            , <&key_physical_attrs 100 100  100   32       0     0     0>
-            , <&key_physical_attrs 100 100  200    0       0     0     0>
-            , <&key_physical_attrs 100 100  300   29       0     0     0>
-            , <&key_physical_attrs 100 100  400   42       0     0     0>
-            , <&key_physical_attrs 100 100  700   42       0     0     0>
-            , <&key_physical_attrs 100 100  800   29       0     0     0>
-            , <&key_physical_attrs 100 100  900    0       0     0     0>
-            , <&key_physical_attrs 100 100 1000   32       0     0     0>
-            , <&key_physical_attrs 100 100 1100   95       0     0     0>
-            , <&key_physical_attrs 100 100    0  195       0     0     0>
-            , <&key_physical_attrs 100 100  100  132       0     0     0>
-            , <&key_physical_attrs 100 100  200  100       0     0     0>
-            , <&key_physical_attrs 100 100  300  129       0     0     0>
-            , <&key_physical_attrs 100 100  400  142       0     0     0>
-            , <&key_physical_attrs 100 100  700  142       0     0     0>
-            , <&key_physical_attrs 100 100  800  129       0     0     0>
-            , <&key_physical_attrs 100 100  900  100       0     0     0>
-            , <&key_physical_attrs 100 100 1000  132       0     0     0>
-            , <&key_physical_attrs 100 100 1100  195       0     0     0>
-            , <&key_physical_attrs 100 100    0  295       0     0     0>
-            , <&key_physical_attrs 100 100  100  232       0     0     0>
-            , <&key_physical_attrs 100 100  200  200       0     0     0>
-            , <&key_physical_attrs 100 100  300  229       0     0     0>
-            , <&key_physical_attrs 100 100  400  242       0     0     0>
-            , <&key_physical_attrs 100 100  700  242       0     0     0>
-            , <&key_physical_attrs 100 100  800  229       0     0     0>
-            , <&key_physical_attrs 100 100  900  200       0     0     0>
-            , <&key_physical_attrs 100 100 1000  232       0     0     0>
-            , <&key_physical_attrs 100 100 1100  295       0     0     0>
-            , <&key_physical_attrs 100 100  330  355    1500   430   455>
-            , <&key_physical_attrs 100 100  430  355    3000   430   455>
-            , <&key_physical_attrs 100 100  670  355 (-3000)   770   455>
-            , <&key_physical_attrs 100 100  770  355 (-1500)   770   455>
-            ;
-    };
-
-    position_map {
-        compatible = "zmk,physical-layout-position-map";
-
-        default {
-            physical-layout = <&default>;
-            positions = <>;
         };
     };
 };
