@@ -37,18 +37,6 @@
             tapping-term-ms = <120>;
             bindings = <&kp>, <&kp>;
         };
-        kt_on: key_toggle_on_only {
-            compatible = "zmk,behavior-key-toggle";
-            #binding-cells = <1>;
-            display-name = "Key Toggle On";
-            toggle-mode = "on";
-        };
-		kt_off: key_toggle_off_only {
-            compatible = "zmk,behavior-key-toggle";
-            #binding-cells = <1>;
-            display-name = "Key Toggle Off";
-            toggle-mode = "off";
-        };
     };
 
     conditional_layers {
@@ -65,27 +53,27 @@
         // Press F13 for gaming layer activated/deactivated
         gaming_lyr_feedback_ok {
             layers = <GAMING>;
-            bindings = <&kt_on F13 &kt_off F13>;
+            bindings = <&kp F13 &kp F13>;
         };
         left_lyr_feedback_ok {
             layers = <LEFT_LYR>;
-            bindings = <&kt_on F14 &kt_off F14>;
+            bindings = <&kp F14 &kp F14>;
         };
         right_lyr_feedback_ok {
             layers = <RIGHT_LYR>;
-            bindings = <&kt_on F15 &kt_off F15>;
+            bindings = <&kp F15 &kp F15>;
         };
 		both_lyr_feedback_ok {
             layers = <BOTH>;
-            bindings = <&kt_on F16 &kt_off F16>;
+            bindings = <&kp F16 &kp F16>;
         };
 		gaming_alt_lyr_feedback_ok {
             layers = <GAMING_ALT>;
-            bindings = <&kt_on F17 &kt_off F17>;
+            bindings = <&kp F17 &kp F17>;
         };
 		default_lyr_feedback_ok {
 			layers= <DEFAULT>;
-			bindings = <&kt_on F24 &kt_off F24>;
+			bindings = <&kp F24 &kp F24>;
 		};
     };
 
