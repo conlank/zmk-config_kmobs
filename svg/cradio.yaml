@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: cradio}
 layers:
   default:
-  - {t: Q, h: LCTRL}
+  - {t: Q, h: '$$mdi:apple-keyboard-control$$'}
   - W
   - E
   - R
@@ -10,7 +10,7 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: RCTRL}
+  - {t: P, h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - {t: '''', h: LALT}
+  - {t: '''', h: '$$mdi:apple-keyboard-option$$'}
   - Z
   - X
   - C
@@ -30,10 +30,10 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: RSHIFT}
-  - {t: TAB, h: left}
-  - LSHIFT
-  - SPACE
+  - {t: /, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: left}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
   - {t: ENTER, h: right}
   gaming:
   - F
@@ -41,12 +41,12 @@ layers:
   - W
   - E
   - R
-  - {t: gaming, h: toggle}
+  - {t: gaming, h: '$$mdi:toggle-switch$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LSHIFT
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -56,7 +56,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -65,9 +65,9 @@ layers:
   - ESC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RALT
+  - $$mdi:apple-keyboard-option$$
   - gamingalt
-  - SPACE
+  - $$mdi:keyboard-space$$
   - {t: ▽, type: trans}
   - ENTER
   left:
@@ -108,7 +108,7 @@ layers:
   right:
   - '~'
   - <
-  - UP
+  - $$mdi:arrow-up$$
   - '>'
   - +
   - ^
@@ -117,9 +117,9 @@ layers:
   - ':'
   - {t: PG UP, h: HOME}
   - '`'
-  - LEFT
-  - DOWN
-  - RIGHT
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
   - '-'
   - '*'
   - '['
@@ -145,27 +145,27 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: gaming, h: toggle}
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
+  - {t: gaming, h: '$$mdi:toggle-switch$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&sys_reset'
-  - '&bootloader'
+  - {t: '$$mdi:flash$$', h: '$$mdi:new-box$$', s: '$$mdi:micro-sd$$', type: sym_by_sym}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT, h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - {t: '$$mdi:flash$$', h: '$$mdi:new-box$$', s: '$$mdi:micro-sd$$', type: sym_by_sym}
   - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
-  - {t: BT, h: '2'}
+  - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -207,7 +207,7 @@ layers:
   - F9
   - F10
   - {type: held}
-  - TAB
+  - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
@@ -219,15 +219,15 @@ combos:
 - p: [16, 17]
   k: BSPC
 - p: [23, 24]
-  k: LGUI
+  k: $$mdi:apple-keyboard-command$$
   l: [default, left, right]
 - p: [25, 26]
-  k: LGUI
+  k: $$mdi:apple-keyboard-command$$
 - p: [20, 21]
-  k: LSHIFT
+  k: $$mdi:apple-keyboard-shift$$
   l: [default, left, right]
 - p: [28, 29]
-  k: RSHIFT
+  k: $$mdi:apple-keyboard-shift$$
 - p: [20, 29]
   k: '&caps_word'
 - p: [30, 22]
@@ -235,6 +235,6 @@ combos:
 - p: [30, 23]
   k: Gui+V
 - p: [9, 33]
-  k: Gui+BACKSPACE
+  k: Gui+$$mdi:backspace-outline$$
 - p: [33, 19]
   k: Gui+DEL
