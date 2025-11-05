@@ -63,11 +63,11 @@
             layers = <RIGHT_LYR>;
             bindings = <&kp F15 &kp F15>;
         };
-		right_lyr_feedback_ok {
+		both_lyr_feedback_ok {
             layers = <BOTH>;
             bindings = <&kp F16 &kp F16>;
         };
-		        gaming_alt_lyr_feedback_ok {
+		gaming_alt_lyr_feedback_ok {
             layers = <GAMING_ALT>;
             bindings = <&kp F17 &kp F17>;
         };
