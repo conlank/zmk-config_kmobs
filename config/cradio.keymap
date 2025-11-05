@@ -81,7 +81,7 @@
         };
 		gaming_alt_lyr_feedback_ok {
             layers = <GAMING_ALT>;
-            bindings = <&kt_on F17 &kt_of F17>;
+            bindings = <&kt_on F17 &kt_off F17>;
         };
 		default_lyr_feedback_ok {
 			layers= <DEFAULT>;
