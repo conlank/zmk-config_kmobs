@@ -5,3 +5,4 @@
  */
 
 #include "sweep.dtsi"
+#include "sweep_esb_addr.dtsi"
