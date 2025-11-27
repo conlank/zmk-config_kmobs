@@ -8,7 +8,7 @@ on:
       - 'config/*.keymap'
       - 'config/*.dtsi'
       - 'config/*.json'
-      - 'keymap_drawer.config.yaml'
+      - 'config/keymap_drawer.config.yaml'
       - '.github/workflows/draw-keymaps.yml'
       # - 'config/boards/*/*/*.keymap'
 
@@ -18,7 +18,7 @@ jobs:
     # uses: SethMilliken/keymap-drawer/.github/workflows/draw-zmk.yml@main
     with:
       keymap_patterns: "config/*.keymap"                                  # path to the keymaps to parse
-      config_path: "keymap_drawer.config.yaml"                            # config file, ignored if not exists
+      config_path: "config/keymap_drawer.config.yaml"                            # config file, ignored if not exists
       output_folder: "svg"                                                # path to save produced SVGs
       #install_repo: "https://github.com/SethMilliken/keymap-drawer.git"  # repo to use (typically should match "uses" property above)
       install_repo: https://github.com/conlank/keymap-drawer.git
